@@ -2,10 +2,7 @@
 
 /* */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+use App\Http\Controllers\Homecontroller;
 
-Route::get('/matthijs', function () {
-    return view('matthijs');
-});
+Route::get('/', 'HomeController@showHome');
+Route::get('/about-us', 'HomeController@showAboutUs');
