@@ -11,8 +11,10 @@
     
     <header>
        @section('header')
+
            De header
        @show
+       <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="logo">
     </header>
     <nav>
         <a href="/">Home</a>
@@ -20,11 +22,18 @@
         <a href="/shop">Shop</a>
         <a href="/matthijs">Me</a>
     </nav>
+    <div class="container">
+        <img src="https://www.bacancytechnology.com/blog/wp-content/uploads/2019/09/laravel6.0banner.png" alt="huts!">
+    </div>
     <main>
+      @yield('kopje')
      @yield('content')
     </main>
     <footer>
-        FOOTER
+        <div class="links">
+            <a href="http://matthijsberghuis.com">Mijn portfolio</a>
+            <a href="https://github.com/matthijsdevelopment/bap-website">Github voor dit project</a>
+        </div>
     </footer>
 </body>
 </html>
