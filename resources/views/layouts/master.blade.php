@@ -17,10 +17,9 @@
        <img src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" alt="logo">
     </header>
     <nav>
-        <a href="/">Home</a>
-        <a href="/about-us">About</a>
-        <a href="/shop">Shop</a>
-        <a href="/matthijs">Me</a>
+        <a href="{{ url('/') }}">Home</a>
+        <a href="{{ url('about-us') }}">About</a>
+        <a href="{{ url('product/create') }}">add</a>
     </nav>
     <div class="container">
         <img src="https://www.bacancytechnology.com/blog/wp-content/uploads/2019/09/laravel6.0banner.png" alt="huts!">
