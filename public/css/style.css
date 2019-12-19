@@ -52,7 +52,7 @@ nav a:hover {
 main {
     margin-top: 100px;  
     padding: 0px 80px;
-    height: 70vh;
+    height: 75vh;
 }
 
 main h1 {
@@ -89,3 +89,73 @@ footer {
     color: white;
     font-size: 1.1em;
 }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: none;
+}
+
+input, textarea {
+    width: 75%;
+    margin-left: auto;
+    height: 45px;
+    margin-right: auto;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+ button {
+     width: 100px;
+     height: 30px;
+     border-radius: 20px;
+     background-color: white;
+     border: 1px solid black;
+     transition: 0.3s ease-in-outr;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 20px;
+ }
+
+ button:hover {
+     background-color: black;
+     color: white;
+ }
+
+ .is-invalid {
+     border: 1px solid red;
+ }
+
+ .errorr {
+     text-align: center;
+ }
+
+ .error-message {
+    width: 75%;
+    background-color: #ee533f;
+    padding: 7px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+ }
