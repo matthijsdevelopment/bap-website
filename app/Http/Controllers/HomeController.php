@@ -13,4 +13,9 @@ class Homecontroller extends Controller {
     {
         return view('aboutus');
     }
+
+    public function showForm() 
+    {
+        return view('form');
+    }
 }

@@ -23,7 +23,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('product.form');
+     return view('product.form');
     }
 
     /**
@@ -34,7 +34,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       return $request->all();
     }
 
     /**
