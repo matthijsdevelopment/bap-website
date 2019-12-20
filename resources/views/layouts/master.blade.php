@@ -19,7 +19,7 @@
     <nav>
         <a href="{{ url('/') }}">Home</a>
         <a href="{{ url('about-us') }}">About</a>
-        <a href="{{ url('product/create') }}">add</a>
+        <a href="{{ url('product/create') }}">Product Formulier</a>
     </nav>
     <div class="container">
         <img src="https://www.bacancytechnology.com/blog/wp-content/uploads/2019/09/laravel6.0banner.png" alt="huts!">
