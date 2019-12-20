@@ -50,9 +50,9 @@ nav a:hover {
 }
 
 main {
-    margin-top: 100px;  
-    padding: 0px 80px;
-    height: 75vh;
+    margin-top: 100px;
+    padding: 52px 80px;
+    height: 104%;
 }
 
 main h1 {
