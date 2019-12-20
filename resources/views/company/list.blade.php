@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('header')
-alle bedrijven
+Alle bedrijven
 @endsection
 
 @section('content')
