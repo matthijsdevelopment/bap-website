@@ -16,3 +16,4 @@
 
 <a href="{{ route('company.list') }}">Terug naar alle bedrijven</a>
 @endsection
+

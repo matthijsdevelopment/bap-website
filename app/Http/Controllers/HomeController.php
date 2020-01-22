@@ -12,8 +12,9 @@ class Homecontroller extends Controller {
             'Laptop'
         ];
 
-return view('home', ['producten' => $products]);
-    }
+    return view('home', ['producten' => $products]);
+
+        }
 
     public function showHome() 
     {
