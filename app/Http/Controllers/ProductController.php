@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Product;
 class ProductController extends Controller
 {
     /**
@@ -13,7 +13,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $product = Product::all();
+
+        return view('product.list', ['products' => $product]);
     }
 
     /**
@@ -34,7 +36,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate(
+        $productData = $request->validate(
 
         [
             'title' => 'required|min:3',
@@ -43,6 +45,15 @@ class ProductController extends Controller
             'pub_date' => 'required|after_or_equal:today'
         ]);
 
+        // $product = new Product();
+        // $product->name = $productData['title'];
+        // $product->description = $productData['description'];
+        // $product->price = $productData['price'];
+        // $product->pub_date = $productData['pub_date'];
+
+        // $product->save();
+
+        $product = Product::create($productData);
         return 'VALIDATIE IS GELUKT';
     }
 
