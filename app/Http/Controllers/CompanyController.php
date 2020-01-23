@@ -10,7 +10,7 @@ class CompanyController extends Controller
 {
     public function list() {
         $companies = Company::all();
-        dd($companies);
+        return view('company.list', ['bedrijven' =>$companies]);
     }
 
     public function details($id) {
