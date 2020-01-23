@@ -21,6 +21,22 @@
         <a href="{{ url('about-us') }}">About</a>
         <a href="{{ url('product/create') }}">Product Formulier</a>
         <a href="{{ url('bedrijven') }}">Bedrijven</a>
+        <a href="{{ url('products') }}">Products</a>
+        @auth
+        <a class="dropdown-item" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+            {{ __('Logout') }}
+        </a>
+
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
+        @endauth
+        @guest
+            <a href="{{ url('login') }}">Login</a>
+            <a href="{{ url('register') }}">Register</a>
+        @endguest
     </nav>
     <div class="container">
         <img src="https://www.bacancytechnology.com/blog/wp-content/uploads/2019/09/laravel6.0banner.png" alt="huts!">
