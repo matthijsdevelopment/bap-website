@@ -16,4 +16,5 @@ Alle Producten
     </tr>
     @endforeach
 </table>
+{{ $products->links() }}
 @endsection

@@ -172,3 +172,15 @@ td {
 table {
     width: 100%;
 }
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: -80px;
+}
+
+li {
+    list-style-type: none;
+}
